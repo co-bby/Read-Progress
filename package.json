@@ -1,6 +1,6 @@
 {
   "name": "readprogress",
-  "version": "0.0.1",
+  "version": "0.0.3",
   "author": "Cobby <nkumsagoefredrick@gmail.com>",
   "description": ".A React component that shows the progress of reading a page",
   "repository": {
