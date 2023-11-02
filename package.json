@@ -1,6 +1,6 @@
 {
   "name": "readprogress",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "author": "Cobby <nkumsagoefredrick@gmail.com>",
   "description": ".A React component that shows the progress of reading a page",
   "repository": {
@@ -8,7 +8,7 @@
     "url": "https://github.com/co-bby/Read-Progress.git"
   },
   "license": "MIT",
-  "main": "lib/ReadProgress.js",
+  "main": "lib/src/index.js",
   "type": "module",
   "keywords": [
     "Read Progress",
@@ -32,7 +32,6 @@
     "typescript": "^5.2.2"
   },
   "scripts": {
-    "build": "mkdir -p lib && rm -rf lib/*; tsc --declaration --emitDeclarationOnly --noEmit false && mv lib/src/*.d.ts lib/ && rmdir lib/src && rm -rf lib/test && prettier --ignore-path '' --write lib/ReadProgress.d.ts && esbuild --target=es2017 --format=esm --outfile=lib/ReadProgress.js --external:react --bundle ./src/ReadProgress.tsx",
-    "test": "tsc && eslint . && prettier --check "
+    "build": "esbuild --bundle src/index.ts --outfile=lib/index.js --target=es2017 --format=cjs --external:react"
   }
 }
