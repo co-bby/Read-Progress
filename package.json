@@ -1,6 +1,6 @@
 {
   "name": "readprogress",
-  "version": "0.0.3",
+  "version": "0.0.7",
   "author": "Cobby <nkumsagoefredrick@gmail.com>",
   "description": ".A React component that shows the progress of reading a page",
   "repository": {
@@ -8,8 +8,8 @@
     "url": "https://github.com/co-bby/Read-Progress.git"
   },
   "license": "MIT",
-  "main": "lib/src/index.js",
-  "type": "module",
+  "main": "lib/index.js",
+  
   "keywords": [
     "Read Progress",
     "progress Bar",
@@ -32,6 +32,6 @@
     "typescript": "^5.2.2"
   },
   "scripts": {
-    "build": "esbuild --bundle src/index.ts --outfile=lib/index.js --target=es2017 --format=cjs --external:react"
-  }
+  "build": "esbuild src/index.ts --bundle --outfile=lib/index.js --platform=node --target=es2017 --format=cjs --external:react"
+}
 }
