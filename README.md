@@ -27,7 +27,7 @@ To use the React Read Progress Component in your React application, import it an
 
 ```jsx
 import React from 'react';
-import ReadProgress from 'readprogress';
+import { ReadProgress } from 'readprogress';
 
 export default function MyComponent{
     return (
@@ -46,9 +46,7 @@ export default function MyComponent{
 <ReadProgress
   color="#ff0000"
   height={4}
-  scrollOffset={100}
-  
-  
+  scrollOffset={100}  
 />
 ```
 
